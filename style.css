@@ -1,279 +1,41 @@
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: rgb(8, 6, 26);
+  background-color: #08061a;
   color: white;
   font-family: sans-serif;
 }
 
-/* -------- Navbar -------- */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 20px 40px;
-  background-color: rgb(2, 2, 59);
-}
-
-.left {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-nav ul {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-nav ul li {
-  list-style: none;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-nav ul li a:hover {
-  color: lavender;
-  font-size: 1.05rem;
-}
-
-/* -------- First Section -------- */
-.firstsection {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 40px 0;
-  padding: 20px;
-  flex-wrap: wrap;
-}
-
-.firstsection > div {
-  flex: 1 1 300px;
-  text-align: center;
-}
-
-.leftsection {
-  font-size: 2rem;
-  margin-top: 20px;
-}
-
-.leftsection .buttons {
-  padding: 30px 0;
-}
-
-.leftsection .btn {
-  padding: 12px 24px;
-  background: #1e2167;
-  color: white;
-  border: 2px solid white;
-  border-radius: 6px;
-  font-size: 1rem;
-  margin: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.leftsection .btn:hover {
-  background-color: white;
-  color: #1e2167;
-}
-
-.rightsection img {
-  max-width: 100%;
-  height: auto;
-}
-
-.purple {
-  color: blueviolet;
+.text-info {
+  color: blueviolet !important;
 }
 
 #element {
   color: blueviolet;
 }
-
-/* -------- Second Section -------- */
-.secondSection {
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.secondSection h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.secondSection .text-grey {
-  color: gray;
-}
-
-.secondSection .box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 60px;
-  margin-top: 40px;
-  position: relative;
-}
-
-.secondSection .vertical {
-  position: relative;
-  width: 150px;
-  padding-top: 50px;
-  text-align: center;
-}
-
-.image-top {
-  width: 30px;
-  margin-bottom: 10px;
-}
-
-.vertical-title {
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.vertical-desc {
-  color: gray;
-  font-size: 0.75rem;
-  margin-top: 8px;
-}
-
-/* Horizontal line */
-main hr {
-  border: none;
-  background-color: #9c97f1;
-  height: 1.2px;
-  margin: 40px 20px;
-}
-
-/* -------- Footer -------- */
 footer {
-  background-color: #0e0e1a;
-  color: white;
-  padding: 20px 0;
+  background-color: #111111; /* darker black */
+  color: #f1f1f1;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 20px;
-  padding: 20px;
+footer a {
+  text-decoration: none;
+  color: #f1f1f1;
 }
 
-.footer > div {
-  min-width: 150px;
+footer a:hover {
+  color: #0d6efd; /* Bootstrap primary color */
+  transition: 0.3s ease-in-out;
 }
 
-.footer ul {
-  list-style: none;
-  padding: 0;
+footer h5 {
+  font-weight: 600;
 }
 
-.footer ul li {
-  margin: 5px 0;
-}
-
-.footer-rights {
-  text-align: center;
-  color: gray;
-  padding: 12px 0;
+footer p {
   font-size: 0.9rem;
 }
 
-/* -------- Responsive Media Queries -------- */
-@media (max-width: 1024px) {
-  .firstsection {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .firstsection > div {
-    width: 100%;
-  }
-
-  nav {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-
-  nav ul {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  .secondSection .box {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (max-width: 768px) {
-  nav ul li a {
-    font-size: 0.95rem;
-  }
-
-  .leftsection {
-    font-size: 1.5rem;
-  }
-
-  .leftsection .btn {
-    font-size: 0.9rem;
-    padding: 10px 20px;
-  }
-
-  .vertical-title {
-    font-size: 1rem;
-  }
-
-  .vertical-desc {
-    font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .left {
-    font-size: 1.5rem;
-  }
-
-  .leftsection {
-    font-size: 1.2rem;
-  }
-
-  .leftsection .buttons {
-    padding: 20px 0;
-  }
-
-  .leftsection .btn {
-    font-size: 0.85rem;
-    padding: 8px 16px;
-  }
-
-  .secondSection h1 {
-    font-size: 1.5rem;
-  }
-
-  .vertical {
-    width: 100%;
-    padding: 20px 0;
-  }
-
-  .footer {
-    flex-direction: column;
-    align-items: center;
-  }
-}
