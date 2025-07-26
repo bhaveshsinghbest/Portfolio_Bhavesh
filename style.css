@@ -16,7 +16,7 @@ body {
   color: blueviolet;
 }
 footer {
-  background-color: #111111; /* darker black */
+  background-color: #111111; 
   color: #f1f1f1;
   font-family: 'Segoe UI', sans-serif;
 }
@@ -38,52 +38,6 @@ footer h5 {
 footer p {
   font-size: 0.9rem;
 }
-
-/* .carousel-item {
-    transition: transform 1s ease-in-out;
-  }
-
-  .card {
-    width: 360px;
-    height: 350px;
-    transition: all 0.5s ease-in-out;
-    border-radius: 1rem;
-  }
-
-  .focus-card {
-    transform: scale(1.1);
-    filter: none;
-    z-index: 2;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
-  }
-
-  .blur-card {
-    filter: blur(2px);
-    opacity: 0.5;
-    z-index: 1;
-    background-color: #f1f1f1;
-  }
-
-  .carousel-inner {
-    align-items: center;
-    min-height: 400px;
-  }
-
-  @media (max-width: 768px) {
-    .blur-card {
-      display: none;
-    }
-
-    .focus-card {
-      width: 90%;
-      height: auto;
-    }
-  } */
-
-
-
-
 
 .carousel-inner {
     height: 400px;
